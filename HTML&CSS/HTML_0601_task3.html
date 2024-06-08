@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Han">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPLINE-Clone4CSSPractice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            color: #052855;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: #0061ff;    
+            text-decoration-thickness: 2px;
+            text-underline-offset: 6px;
+        }
+        li::marker{
+            color: #0061ff;
+            font-size: 130%;
+        }
+        .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .banner1{
+            height: 270px;
+            box-sizing: border-box;
+            padding-left: calc((100vw - 1088px) / 2);
+            padding-right: calc((100vw - 1088px) / 2);
+            background-color: #f7f8f9;
+        }
+        .banner1-section{
+            text-align: center;
+        }
+        .banner1-section h2{
+            padding-top: 80px;
+            font-size: 200%;
+        }
+        .banner2{
+            height: 380px;
+            display: flex;
+            padding-top: 70px;
+            padding-left: calc((100vw - 1088px) / 2);
+            padding-right: calc((100vw - 1088px) / 2);
+        }
+        .banner2-info{
+            flex-direction: row;
+        }
+        .banner2 h3{
+            font-size: 175%;
+        }
+        .banner2-list-items{
+            display: flex;
+        }
+        .banner2-list-items ul{
+            padding-left: 20px;
+        }
+        .banner2-info-a
+        {
+            margin-top: 30px;
+            display: flex;
+        }
+        .img-arrow{
+            padding-left: 8px;
+            width: 17px;
+            height: 19px;
+        }
+        .banner2-right{
+            padding-left: 110px;
+            padding-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner1">
+        <section class="banner1-section">
+            <H2>單一平台就能助你<br>
+                在全通路輕鬆開店創業</H2>
+            <p">
+                從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，並能同步管理所有銷售管道，<span class="roboto-medium">SHOPLINE</span> 助你賣得更多、賣得更好！
+            </p>
+        </section>
+    </div>
+    <div class="banner2">
+        <div class="banner2-info">
+            <h3>免寫程式、多款版型<br>
+                輕鬆打造全能電商網站</h3>
+            <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+            <div class="banner2-list-items">
+                <ul>
+                    <li>豐富版型主題與字型搭配</li>
+                    <li><span class="roboto-medium">RWD</span> 響應式網頁設計</li>
+                    <li>獨有網址 ＆ <span class="roboto-medium">SSL</span> 安全憑證</li>       
+                </ul>
+                <ul style="padding-left: 40px;">
+                    <li><span class="roboto-medium">SEO</span> 搜尋引擎優化</li>
+                    <li>一頁商店</li>
+                    <li>開放 <span class="roboto-medium">HTML</span>／<span class="roboto-medium">CSS</span> 編輯</li>
+                </ul>
+            </div>
+            <div class="banner2-info-a">
+                <a href="">看看開店祕技</a>
+                <img class="img-arrow" src="SHOPLINE-PageAsset/link-arrow.png" alt="">
+            </div>
+        </div>
+        <div class="banner2-right">
+            <img style="max-width: 100%; " src="./SHOPLINE-PageAsset/banner2-right-img.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
