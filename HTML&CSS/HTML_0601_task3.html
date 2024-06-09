@@ -11,6 +11,7 @@
         *{
             color: #052855;
             font-family: Arial, Helvetica, sans-serif;
+            flex-shrink: 1
         }
         a{
             color: #0061ff;    
@@ -40,28 +41,52 @@
             padding-top: 80px;
             font-size: 200%;
         }
-        .banner2{
-            height: 380px;
-            display: flex;
-            padding-top: 70px;
+        .bannerL2R{
+            margin-top: 64px;
             padding-left: calc((100vw - 1088px) / 2);
             padding-right: calc((100vw - 1088px) / 2);
+            height: 445px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
         }
-        .banner2-info{
+        .bannerR2L{
+            padding-left: calc((100vw - 1088px) / 2);
+            padding-right: calc((100vw - 1088px) / 2);
+            height: 445px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-top: 64px;
+        }
+        .banner-info{
+            box-sizing: border-box;
             flex-direction: row;
+            width: 510px;
         }
-        .banner2 h3{
+        .banner-info p{
+            margin-bottom: 24px;
+            line-height: 27px;
+        }
+        .banner-title{
+            line-height: 40px;
             font-size: 175%;
+            margin-bottom: 24px;
         }
-        .banner2-list-items{
+        .banner-list-items{
             display: flex;
         }
-        .banner2-list-items ul{
+        .banner-list-items ul{
             padding-left: 20px;
+            padding-bottom: 0px;
         }
-        .banner2-info-a
+        .banner-list-items li{
+            margin-bottom: 8px;
+        }
+        .banne-info-a
         {
-            margin-top: 30px;
+            margin-top: 10px;
             display: flex;
         }
         .img-arrow{
@@ -69,9 +94,9 @@
             width: 17px;
             height: 19px;
         }
-        .banner2-right{
-            padding-left: 110px;
-            padding-bottom: 24px;
+        .banner-image{
+            box-sizing: border-box;
+            width: calc(100% - 510px - 100px);
         }
     </style>
 </head>
@@ -85,31 +110,82 @@
             </p>
         </section>
     </div>
-    <div class="banner2">
-        <div class="banner2-info">
-            <h3>免寫程式、多款版型<br>
+    <div class="bannerL2R" id="banner2">
+        <div class="banner-info">
+            <h3 class="banner-title">免寫程式、多款版型<br>
                 輕鬆打造全能電商網站</h3>
             <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
-            <div class="banner2-list-items">
+            <div class="banner-list-items">
                 <ul>
                     <li>豐富版型主題與字型搭配</li>
                     <li><span class="roboto-medium">RWD</span> 響應式網頁設計</li>
                     <li>獨有網址 ＆ <span class="roboto-medium">SSL</span> 安全憑證</li>       
                 </ul>
-                <ul style="padding-left: 40px;">
+                <ul style="margin-left: 50px;">
                     <li><span class="roboto-medium">SEO</span> 搜尋引擎優化</li>
                     <li>一頁商店</li>
                     <li>開放 <span class="roboto-medium">HTML</span>／<span class="roboto-medium">CSS</span> 編輯</li>
                 </ul>
             </div>
-            <div class="banner2-info-a">
+            <div class="banne-info-a">
                 <a href="">看看開店祕技</a>
                 <img class="img-arrow" src="SHOPLINE-PageAsset/link-arrow.png" alt="">
             </div>
         </div>
-        <div class="banner2-right">
-            <img style="max-width: 100%; " src="./SHOPLINE-PageAsset/banner2-right-img.png" alt="">
+        <div class="banner-image">
+            <img style="height: 100%;" src=".//SHOPLINE-PageAsset/banner2-right-img.webp" alt="">
         </div>
     </div>
-</body>
+    <div class="bannerR2L" id="banner3">
+        <div class="banner-info">
+            <h3 class="banner-title">支持海內外電商<br>
+                金流、物流一次搞定</h3>
+            <p>支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送貨服務，加速消費者完成下單交易，大幅降低購物車放棄率！</p>
+            <div class="banner-list-items">
+                <ul>
+                    <li>線上／線下信用卡刷卡</li>
+                    <li>第三方金流／行動支付整合</li>
+                    <li>超商代碼／條碼繳費</li>       
+                </ul>
+                <ul style="margin-left: 50px">
+                    <li>多溫層宅配並指定運費</li>
+                    <li>超商／宅配貨到付款</li>
+                    <li>發票開立與串接</li>
+                </ul>
+            </div>
+            <div class="banne-info-a">
+                <a href="">了解更多金物流</a>
+                <img class="img-arrow" src="SHOPLINE-PageAsset/link-arrow.png" alt="">
+            </div>
+        </div>
+        <div class="banner-image">
+            <img style="max-width: 100%;" src=".//SHOPLINE-PageAsset/banner3-img.webp" alt="">
+        </div>
+    </div>
+    <div class="bannerL2R" id="banner4">
+        <div class="banner-info">
+            <h3 class="banner-title">刺激下單，創造回購<br>
+                行銷導流、促購模組任你玩</h3>
+            <p>多元優惠活動、會員集客機制、網紅分潤等多種優惠促銷，將電商行銷玩法一網打盡；加上廣告追蹤助你有效優化行銷活動，刺激顧客下單、吸引鐵粉回購！</p>
+            <div class="banner-list-items">
+                <ul>
+                    <li>推薦活動與分潤</li>
+                    <li><span class="roboto-medium">A+B</span> 優惠活動</li>
+                    <li>會員分級／點數／購物金</li>       
+                </ul>
+                <ul style="margin-left: 50px">
+                    <li>買Ｘ享Ｙ優惠</span></li>
+                    <li>會員推薦獎賞</li>
+                    <li><span class="roboto-medium">FB</span>／<span class="roboto-medium">Google</span>／<span class="roboto-medium">LINE</span>  廣告追蹤</li>
+                </ul>
+            </div>
+            <div class="banne-info-a">
+                <a href="">看看開店祕技</a>
+                <img class="img-arrow" src="SHOPLINE-PageAsset/link-arrow.png" alt="">
+            </div>
+        </div>
+        <div class="banner-image">
+            <img style="height: 100%;" src=".//SHOPLINE-PageAsset/banner4-img.webp" alt="">
+        </div>
+    </div>
 </html>
