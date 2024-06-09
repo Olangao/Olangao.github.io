@@ -110,13 +110,34 @@
             margin-bottom: 70px;
         }
         .morefunc{
-            height: 750px;
+            height: 800px;
             background-color: #f7f8f9;
+            padding-left: calc((100vw - 1088px) / 2);
+            padding-right: calc((100vw - 1088px) / 2);
         }
         .morefunc h2{
             padding-top: 70px;
             text-align: center;
             font-size: 170%;
+        }
+        .featureblocks{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .feature{
+            box-sizing: border-box;
+            height: 270px;
+            width: calc((100% - 32px * 2) / 3.001);
+            text-align: center;
+            margin-top: 60px;
+        }
+        .feature h3{
+            margin-top: 35px;
+            font-size: 125%;
+        }
+        .feature p{
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -261,5 +282,37 @@
     </div>
     <div class="morefunc">
         <h2>更多功能與服務</h2>
+        <section class="featureblocks">
+            <div class="feature">
+                <img src="/HTML&CSS/SHOPLINE-PageAsset/f01.png" alt="">
+                <h3>強大庫存與訂單系統</h3>
+                <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
+            <div class="feature">
+                <img src="/HTML&CSS/SHOPLINE-PageAsset/f02.png" alt="">
+                <h3>即時化商店業績分析</h3>
+                <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>
+            </div>
+            <div class="feature">
+                <img src="/HTML&CSS/SHOPLINE-PageAsset/f03.png" alt="">
+                <h3>多國語系、幣值切換</h3>
+                <p>想做跨境電商也ＯＫ！提供語言、幣別、稅金等進階功能，友善應對海外消費需求。</p>
+            </div>
+            <div class="feature">
+                <img src="/HTML&CSS/SHOPLINE-PageAsset/f04.png" alt="">
+                <h3>專業顧問線上支援</h3>
+                <p>迅速、透明的溝通管道，協助你快速解決從線上到線下、從在地到海外的網店疑難。</p>
+            </div>
+            <div class="feature">
+                <img src="/HTML&CSS/SHOPLINE-PageAsset/f05.png" alt="">
+                <h3>廣告行銷加值服務</h3>
+                <p>由官方認證的專業投手團隊，協助品牌投遞 Facebook、Google、LINE 等廣告。</p>
+            </div>
+            <div class="feature">
+                <img src="/HTML&CSS/SHOPLINE-PageAsset/f06.png" alt="">
+                <h3>品牌專屬成長社群</h3>
+                <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>
+            </div>
+        </section>
     </div>
 </html>
