@@ -50,8 +50,8 @@
         }
         .bannerL2R{
             margin-top: 64px;
-            padding-left: calc((100vw - 1088px) / 2);
-            padding-right: calc((100vw - 1088px) / 2);
+            margin-left: calc((100vw - 1088px) / 2);
+            margin-right: calc((100vw - 1088px) / 2);
             height: 445px;
             box-sizing: border-box;
             display: flex;
@@ -82,15 +82,20 @@
             margin-bottom: 24px;
         }
         .banner-list-items{
-            display: flex;
-            justify-content: space-between;
+            
         }
         .banner-list-items ul{
-            padding-left: 20px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             padding-bottom: 0px;
+            padding-left: 0px;
         }
         .banner-list-items li{
-            width: 248px;
+            padding-left: 0px;
+            list-style: inside;
+            width: calc(50% - 10px);
             margin-bottom: 8px;
         }
         .banne-info-a
@@ -104,8 +109,10 @@
             height: 19px;
         }
         .banner-image{
-            box-sizing: border-box;
             width: calc(100% - 510px - 100px);
+        }
+        .banner-image img{
+            max-width: 100%;
         }
         #banner6{
             margin-bottom: 70px;
@@ -162,8 +169,6 @@
                     <li>豐富版型主題與字型搭配</li>
                     <li><span class="roboto-medium">RWD</span> 響應式網頁設計</li>
                     <li>獨有網址 ＆ <span class="roboto-medium">SSL</span> 安全憑證</li>       
-                </ul>
-                <ul>
                     <li><span class="roboto-medium">SEO</span> 搜尋引擎優化</li>
                     <li>一頁商店</li>
                     <li>開放 <span class="roboto-medium">HTML</span>／<span class="roboto-medium">CSS</span> 編輯</li>
