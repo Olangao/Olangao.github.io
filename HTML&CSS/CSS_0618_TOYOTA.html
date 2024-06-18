@@ -28,16 +28,16 @@
         .feature-title-R2L{
             display: flex;
             width: 355px;
-            height: 135px;
+            
             background-color: #bb0404;
         }
         .feature-title-number-R2L{
             display: inline-block;
             color: white;
-            font-size: 95px;
+            font-size: 90px;
             font-family: "Playwrite PL", cursive;
             font-weight: 150;
-            transform: rotate(90deg) translate(0px, -40px);
+            transform: rotate(90deg) translate(0px, -20px);
         }
         .feature-title-number span{
             padding-left: 10px;
@@ -73,7 +73,7 @@
         .feature-text{
             box-sizing: border-box;
             width: 355px;
-            height: 250px;
+            height: 300px;
             background-color: #000000;
             color: white;
             padding: 20px;
@@ -94,7 +94,7 @@
             position: absolute;
         }
         .feature-block-tag-R2L{
-            transform: translate(192px);
+            transform: translate(192px, -36px);
             display: flex;
             position: absolute;
             flex-direction: column;
@@ -127,33 +127,32 @@
             transform: translate(239px, 35px);
             flex-shrink: 0;
         }
-        .play-button{
-            width: 60px;
-            position:absolute;
-            top:428px;
-            left:1315px;
+        .play-button-anchor{
+            position: relative;
         }
         .play-button2{
             width: 60px;
             position:absolute;
-            top:1347px;
-            left:480px;
+            top: 334px;
+            right:1085px;
+
         }
-        .play-button3{
+        .play-button{
             width: 60px;
             position:absolute;
-            top: 2257px;px;
-            left:1318px;
+            top: 334px;
+            right:250px;
         }
         .play-button img{
             width: 100%;
         }
+    
         .revolution-info{
             width: 682px;
             background-color: #eeeeee;
             margin-left: 47px;
             padding: 15px 15px 15px 25px;
-            transform: translate(0px, 148px);
+            transform: translate(0px, 100px);
         }
         .revo-info-red-title{
             font-size: 17px;
@@ -212,9 +211,6 @@
         <div class="feature-pic">
             <img src="./TOYOTA-page-asset/advantage-1-video-button-bg.png" alt="">
         </div>
-        <div class="play-button">
-            <img src="./TOYOTA-page-asset/video-icon.png" alt="">
-       </div>
         <div class="feature-block-tag">
             <div class="feature-title">
                 <div class="feature-title-number">
@@ -245,6 +241,11 @@
                 </ul>
             </div>
         </div>
+        <div class="play-button-anchor">
+            <div class="play-button">
+                <img src="./TOYOTA-page-asset/video-icon.png" alt="">
+            </div>
+        </div>
     </div>
 
     <div class="feature-block" id="02-car-safty">
@@ -253,8 +254,10 @@
         <div class="feature-pic-R2L">
             <img src="./TOYOTA-page-asset/advantage-2-video-button-bg.png" alt="">
         </div>
-        <div class="play-button2">
-            <img src="./TOYOTA-page-asset/video-icon.png" alt="">
+        <div class="play-button-anchor">
+            <div class="play-button2">
+                <img src="./TOYOTA-page-asset/video-icon.png" alt="">
+            </div>
         </div>
        <div class="feature-block-tag-R2L">
             <div class="R2L-tag">
@@ -292,9 +295,11 @@
         <div class="feature-pic">
             <img src="./TOYOTA-page-asset/advantage-3-video-button-bg.png" alt="">
         </div>
-        <div class="play-button3">
-            <img src="./TOYOTA-page-asset/video-icon.png" alt="">
-       </div>
+        <div class="play-button-anchor">
+            <div class="play-button">
+                <img src="./TOYOTA-page-asset/video-icon.png" alt="">
+            </div>
+        </div>
         <div class="feature-block-tag">
             <div class="feature-title">
                 <div class="feature-title-number">
@@ -323,6 +328,88 @@
                     <span>更寧靜的車室</span>
                     <li>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-block" id="04-car-humanity">
+        <div class="feature-block-grey-decoration-R2L">
+        </div>
+        <div class="feature-pic-R2L">
+            <img src="./TOYOTA-page-asset/advantage-4-video-button-bg.png" alt="">
+        </div>
+        <div class="play-button-anchor">
+            <div class="play-button2">
+                <img src="./TOYOTA-page-asset/video-icon.png" alt="">
+            </div>
+        </div>
+       <div class="feature-block-tag-R2L">
+            <div class="R2L-tag">
+                <div class="feature-title-R2L">
+                    <span class="feature-title-text-R2L">以人為本</span>
+                    <span class="feature-title-number-R2L">04</span>
+                </div>
+                <div class="feature-text">
+                        <span>使用者導向的貼心設計</span>
+                        <p>
+                            藉由高度人性化的介面整合，傳遞車輛資訊，豐富日常駕駛體驗。從提升油耗表現到行李廂空間最適化，均細心考量，更加貼近使用者真正所需與習慣，並給予即時回應
+                        </p>
+                </div>
+            </div>
+            <div class="R2L-info">
+                <div class="revolution-info">
+                    <div class="revo-info-red-title-div">
+                        <span class="revo-info-red-title">因為我們做了這些革新</span>
+                        <div class="revo-info-red-title-line"></div>
+                    </div>
+                    <ul class="revo-info-list">
+                        <span>優異油耗表現</span>
+                        <li>以Corolla Sport為例，更強勁的高效引擎將熱效率提升40%，達到世界級水準，屢屢突破燃油效率新境界。</li>
+                        <span>行李箱空間最適化</span>
+                        <li>以第四代Prius為例，透過將電池位置移到後座下方，讓行李箱擁有更大的空間。</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-block" id="05-car-confidence">
+        <div class="feature-block-grey-decoration">
+        </div>
+        <div class="feature-pic">
+            <img src="./TOYOTA-page-asset/advantage-5-video-button-bg.png" alt="">
+        </div>
+        <div class="feature-block-tag">
+            <div class="feature-title">
+                <div class="feature-title-number">
+                    <span>05</span>
+                </div>
+                <div class="feature-title-text">
+                    <span>引以為傲</span>
+                </div>
+            </div>
+            <div class="feature-text">
+                    <span>極具吸引力的精心設計</span>
+                    <p>
+                        TNGA車款擁有讓人忍不住回頭的新潮外觀、讓駕駛充滿自信的駕馭快感！不僅讓車主能展現個人風格，也能讓擁有者都能引以為傲。
+                    </p>
+            </div>
+            <div class="revolution-info">
+                <div class="revo-info-red-title-div">
+                    <span class="revo-info-red-title">因為我們做了這些革新</span>
+                    <div class="revo-info-red-title-line"></div>
+                </div>
+                <ul class="revo-info-list">
+                    <span>設計概念</span>
+                    <li>TNGA低重心設計，不僅呈現更低伏的運動化外觀，更講究高品質內裝的一致性。</li>
+                    <span>環保概念</span>
+                    <li>為了對環境保護盡一份心力，我們全面提升傳統引擎、變速箱與油電複合動力的動力效能。</li>
+                </ul>
+            </div>
+        </div>
+        <div class="play-button-anchor">
+            <div class="play-button">
+                <img src="./TOYOTA-page-asset/video-icon.png" alt="">
             </div>
         </div>
     </div>
