@@ -10,10 +10,13 @@
             font-family: "Noto Sans TC", sans-serif;
         }
         .feature-block{
-        
+            margin-top: 95px;
+            margin-left: calc((100vw - 960px) / 2);
+            margin-right: calc((100vw - 960px) / 2);
             height: 815px;
-            border: 1.2px solid #0011e8;
+            width: 960px;
             display: flex;
+            flex-shrink: 0;
         }
         .feature-title{
             display: flex;
@@ -21,6 +24,20 @@
             width: 355px;
             height: 135px;
             background-color: #bb0404;
+        }
+        .feature-title-R2L{
+            display: flex;
+            width: 355px;
+            height: 135px;
+            background-color: #bb0404;
+        }
+        .feature-title-number-R2L{
+            display: inline-block;
+            color: white;
+            font-size: 95px;
+            font-family: "Playwrite PL", cursive;
+            font-weight: 150;
+            transform: rotate(90deg) translate(0px, -40px);
         }
         .feature-title-number span{
             display: inline-block;
@@ -36,11 +53,20 @@
             display: flex;
             align-items: center;
         }
+        .feature-title-text-R2L{
+            flex-shrink: 0;
+            align-self: center;
+            color: white;
+            font-size: 50px;
+            font-weight: 250;
+            letter-spacing: 3px;
+            transform:translate(30px);
+        }
         .feature-title-text span{
-            transform: translate(-15px);
+            flex-shrink: 0;
             color: white;
             width: 100%;
-            font-size: 50px;
+            font-size: 43px;
             font-weight: 250;
             letter-spacing: 3px;
         }
@@ -59,7 +85,7 @@
             margin-top: 11px;
             font-size: 20px;
             font-weight: 200;
-            line-height: 180%;
+            line-height: 165%;
             letter-spacing: 2px;
         }
         .feature-block-tag{
@@ -67,10 +93,22 @@
             flex-direction: column;
             position: absolute;
         }
+        .feature-block-tag-R2L{
+            transform: translate(192px);
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         .feature-pic{
-            width: 690px;
-            height: 430px;
-            transform: translate(-255px, 135px);
+            flex-shrink: 0;
+            width: 695px;
+            transform: translate(-260px, 135px);
+        }
+        .feature-pic-R2L{
+            flex-shrink: 0;
+            width: 695px;
+            transform: translate(-440px, 135px);
         }
         .feature-pic img{
             width: 100%;
@@ -79,23 +117,42 @@
             width: 440px;
             height: 290px;
             background-color: #f4f4f4;
-            transform: translate(514px, 35px);
+            transform: translate(520px, 35px);
+            flex-shrink: 0;
+        }
+        .feature-block-grey-decoration-R2L{
+            width: 440px;
+            height: 290px;
+            background-color: #f4f4f4;
+            transform: translate(239px, 35px);
+            flex-shrink: 0;
         }
         .play-button{
             width: 60px;
             position:absolute;
-            top:337px;
-            left:835px;
+            top:428px;
+            left:1315px;
+        }
+        .play-button2{
+            width: 60px;
+            position:absolute;
+            top:1347px;
+            left:480px;
+        }
+        .play-button3{
+            width: 60px;
+            position:absolute;
+            top: 2257px;px;
+            left:1318px;
         }
         .play-button img{
             width: 100%;
         }
         .revolution-info{
             width: 682px;
-            height: 275px;
             background-color: #eeeeee;
             margin-left: 47px;
-            padding: 15px 18px 18px 25px;
+            padding: 15px 15px 15px 25px;
             transform: translate(0px, 148px);
         }
         .revo-info-red-title{
@@ -114,10 +171,42 @@
             width: 73%;
             height: 1px;
         }
+        .revo-info-list{
+            padding-left: 0px;
+        }
+        .revo-info-list span{
+            font-size: 16px;
+            background-color: #000000;
+            color: #ffffff;
+            font-weight: 300;
+            padding: 3px;
+        }
+        .revo-info-list li{
+            line-height: 1em;
+            letter-spacing: 2px;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            margin-left: 15px;
+            list-style-type: square;
+            color: #6e6e6e;
+            font-size: 15px;
+            font-weight: 450;
+        }
+        .revo-info-list li::marker{
+            font-size: 10px;
+            color:#bb0404;
+            margin-right: 120px;
+            padding-left: 17px;
+        }
+        .R2L-tag{
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+        }
     </style>
 </head>
 <body>
-    <div class="feature-block">
+    <div class="feature-block" id="01-car-handling">
         <div class="feature-block-grey-decoration">
         </div>
         <div class="feature-pic">
@@ -146,9 +235,98 @@
                     <span class="revo-info-red-title">因為我們做了這些革新</span>
                     <div class="revo-info-red-title-line"></div>
                 </div>
+                <ul class="revo-info-list">
+                    <span>低重心設計</span>
+                    <li>透過低心設計,不僅呈現更低伏的外觀,更能減少車身側傾,保持高速行駛定性。</li>
+                    <span>車體剛性強化</span>
+                    <li>車身結構採用超高強度鋼材·提高車輛櫆定性,同時藉由雷射強化焊接技術·大幅增加點數單·提升重身抗扭剛性、強化駕定性及安全性。</li>
+                    <span>四輪獨立懸吊</span>
+                    <li>褡載全新四輪獨立懸吊設定,透過懸吊的高承載強度,保持輪胎抓地力,同時兼顧轉向敏度與清晰路感回饋·提升駕馭樂趣。</li>
+                </ul>
             </div>
         </div>
-       
     </div>
+
+    <div class="feature-block" id="02-car-safty">
+        <div class="feature-block-grey-decoration-R2L">
+        </div>
+        <div class="feature-pic-R2L">
+            <img src="./TOYOTA-page-asset/advantage-2-video-button-bg.png" alt="">
+        </div>
+        <div class="play-button2">
+            <img src="./TOYOTA-page-asset/video-icon.png" alt="">
+        </div>
+       <div class="feature-block-tag-R2L">
+            <div class="R2L-tag">
+                <div class="feature-title-R2L">
+                    <span class="feature-title-text-R2L">安全守護</span>
+                    <span class="feature-title-number-R2L">02</span>
+                </div>
+                <div class="feature-text">
+                        <span>行車更安心的高剛性車體</span>
+                        <p>
+                            您的愛車會妥善保護您,強悍穩固的車身可使您安全無虞。世界級的安全功能讓您輕鬆自如享受旅程毫無後顧之憂
+                        </p>
+                </div>
+            </div>
+            <div class="R2L-info">
+                <div class="revolution-info">
+                    <div class="revo-info-red-title-div">
+                        <span class="revo-info-red-title">因為我們做了這些革新</span>
+                        <div class="revo-info-red-title-line"></div>
+                    </div>
+                    <ul class="revo-info-list">
+                        <span>主動安全</span>
+                        <li>以先進的 TSS 系統,主動偵測路況,輔助駕駛判斷路況並維持行車安全,。</li>
+                        <span>被動安全</span>
+                        <li>堅固的高剛性車體,使用熱沖材料的高強度抗扭鋼板、強化座艙對意外事故的保護力,。</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-block" id="03-car-comfortance">
+        <div class="feature-block-grey-decoration">
+        </div>
+        <div class="feature-pic">
+            <img src="./TOYOTA-page-asset/advantage-3-video-button-bg.png" alt="">
+        </div>
+        <div class="play-button3">
+            <img src="./TOYOTA-page-asset/video-icon.png" alt="">
+       </div>
+        <div class="feature-block-tag">
+            <div class="feature-title">
+                <div class="feature-title-number">
+                    <span>03</span>
+                </div>
+                <div class="feature-title-text">
+                    <span>乘坐舒適</span>
+                </div>
+            </div>
+            <div class="feature-text">
+                    <span>放鬆適車室空間</span>
+                    <p>
+                        車室空間設計著重人體工學、透過方向盤、踏板等位置優化,追求更舒適的駕駛位置,並以新型座椅設計,提高座椅包覆性,致力實現長途駕駛不疲勞的舒適駕馭體驗
+                    </p>
+            </div>
+            <div class="revolution-info">
+                <div class="revo-info-red-title-div">
+                    <span class="revo-info-red-title">因為我們做了這些革新</span>
+                    <div class="revo-info-red-title-line"></div>
+                </div>
+                <ul class="revo-info-list">
+                    <span>駕駛位置最佳化</span>
+                    <li>針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操控方向盤。</li>
+                    <span>駕馭視野佳</span>
+                    <li>考量駕駛坐進車內的高度，透過前擋風玻璃位置的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。</li>
+                    <span>更寧靜的車室</span>
+                    <li>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+       
 </body>
 </html>
