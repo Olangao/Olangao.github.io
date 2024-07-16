@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./AABB.css" />
+    <title>Vavin's AABB Game</title>
+  </head>
+  <body class="bg-sky-700">
+    <div id="main-container" class="flex h-screen w-screen flex-col">
+      <div id="content-container" class="mx-auto mt-6 flex h-auto w-1/5 flex-col gap-2 rounded-2xl p-4">
+        <p class="font-MiSansLight my-3 text-center text-xl tracking-widest text-amber-200">請輸入4位不重複數字</p>
+        <div class="mb-4 flex justify-center gap-4">
+          <input id="input-n1" type="text" class="h-9 w-9 rounded-xl text-center" placeholder="?" autofocus="" />
+          <input id="input-n2" type="text" class="h-9 w-9 rounded-xl text-center" placeholder="?" />
+          <input id="input-n3" type="text" class="h-9 w-9 rounded-xl text-center" placeholder="?" />
+          <input id="input-n4" type="text" class="h-9 w-9 rounded-xl text-center" placeholder="?" />
+        </div>
+        <div class="flex h-9 w-auto items-center justify-center gap-4">
+          <a
+            id="submit-btn"
+            class="text-m mx-0 inline-block rounded border border-amber-200 px-5 py-1 font-MiSans text-amber-200 hover:bg-amber-400 hover:text-white focus:outline-none focus:ring active:bg-amber-500"
+            href="#"
+          >
+            送出
+          </a>
+          <a
+            id="reset-btn"
+            class="text-m mx-0 inline-block rounded border border-amber-200 px-5 py-1 font-MiSans text-amber-200 hover:bg-amber-400 hover:text-white focus:outline-none focus:ring active:bg-amber-500"
+            href="#"
+          >
+            重置
+          </a>
+          <a
+            id="reveal-btn"
+            class="text-m mx-0 inline-block rounded border border-amber-200 px-5 py-1 font-MiSans text-amber-200 hover:bg-amber-400 hover:text-white focus:outline-none focus:ring active:bg-amber-500"
+            href="#"
+          >
+            看答案
+          </a>
+        </div>
+      </div>
+      <span class="flex items-center">
+        <span class="h-px flex-1 bg-amber-200"></span>
+        <span class="font-MiSansLight shrink-0 px-6 text-sm tracking-widest text-amber-200">提交紀錄</span>
+        <span class="h-px flex-1 bg-amber-200"></span>
+      </span>
+      <div id="guess-badge-history-container" class="flex flex-col items-center gap-2 p-5"></div>
+    </div>
+    <script src="AABB.js"></script>
+  </body>
+</html>

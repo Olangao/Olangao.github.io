@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "MiSans-Regular";
+    src: url("./MiSans-Regular.otf");
+  }
+  @font-face {
+    font-family: "MiSans-Light";
+    src: url("./MiSans-Light.woff");
+  }
+}
