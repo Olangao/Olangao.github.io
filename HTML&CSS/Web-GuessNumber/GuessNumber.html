@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./GuessNumber.css" />
+    <title>Vavin's Guess Number</title>
+  </head>
+  <body>
+    <div id="main-container" class="flex h-screen w-screen flex-col items-center justify-start bg-blue-800">
+      <p class="my-3 font-NotoSerif font-medium tracking-wide text-white">Guess Number</p>
+      <div class="flex h-auto w-1/5 flex-col gap-3 rounded-md p-2 outline outline-1 outline-yellow-50">
+        <div class="h-8\ flex w-full flex-row items-center gap-2 rounded-md">
+          <input
+            type="number"
+            id="number-input-box"
+            inputmode="numeric"
+            aria-describedby="helper-text-explanation"
+            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+            placeholder="Input your guess in 0~100"
+            required
+          />
+          <button
+            type="button"
+            id="guess-button"
+            class="rounded-lg bg-yellow-200 px-5 py-2.5 font-NotoSerif text-sm font-medium tracking-widest text-black hover:bg-yellow-100 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-700"
+          >
+            Guess!
+          </button>
+          <button
+            type="button"
+            id="restart-button"
+            class="rounded-lg bg-green-500 px-5 py-2.5 font-NotoSerif text-sm font-medium tracking-widest text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Restart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="./GuessNumber.js"></script>
+  </body>
+</html>
