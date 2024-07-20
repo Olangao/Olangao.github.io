@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="aqua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Vavin's Calendar</title>
+  </head>
+  <body>
+    <div id="size-container" class="flex h-screen w-screen flex-col">
+      <div id="content-container" class="mx-auto mb-auto mt-1 h-3/4 w-3/5 p-10">
+        <div class="mx-10 bg-secondary p-2">
+          <div class="flex items-center gap-5 px-2">
+            <a id="current-month-title" class="ml-3 items-center text-center text-2xl text-slate-100"
+              >(Current Month)</a
+            >
+            <p id="current-year" class="text-blue-950">(year)</p>
+            <div class="flex-1"></div>
+            <div class="flex items-stretch">
+              <a id="today-btn" class="btn btn-ghost mr-1 rounded-btn text-sm text-blue-950">移至今天</a>
+              <a id="last-month-btn" class="btn btn-ghost rounded-btn text-blue-950">(Pres Month)</a>
+              <a id="next-month-btn" class="btn btn-ghost rounded-btn text-blue-950">(Next Month)</a>
+            </div>
+          </div>
+        </div>
+        <div class="gap-13 mx-10 mb-3 mt-6 grid grid-cols-7 grid-rows-1 justify-evenly text-center">
+          <div class="rounded-lg text-2xl text-rose-400">日</div>
+          <div class="rounded-lg text-2xl text-slate-50">一</div>
+          <div class="rounded-lg text-2xl text-slate-50">二</div>
+          <div class="rounded-lg text-2xl text-slate-50">三</div>
+          <div class="rounded-lg text-2xl text-slate-50">四</div>
+          <div class="rounded-lg text-2xl text-slate-50">五</div>
+          <div class="rounded-lg text-2xl text-rose-400">六</div>
+        </div>
+        <div class="w-100 mx-10 mb-10 mt-3 h-px bg-slate-100"></div>
+        <div id="date-container" class="w-100 mx-10 mt-6 flex h-full flex-wrap text-center">
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+          <div id="day-grid" class="w-1/7"><span class="cursor-pointer hover:text-secondary"></span></div>
+        </div>
+      </div>
+      <button id="log-profile-button" class="btn bg-neutral tracking-wider" onclick="">Log個人存檔</button>
+      <button id="clear-profile-button" class="btn bg-blue-950 tracking-wider" onclick="">清除個人存檔</button>
+      <dialog id="day-modal" class="modal">
+        <div class="modal-box">
+          <div class="flex flex-col gap-1 text-center">
+            <div id="modal-day-txt" class="mb-3 text-center">(顯示日期)</div>
+            <label class="input input-bordered flex items-center gap-2">
+              時間
+              <input id="task-time" type="text" class="grow text-center" />
+            </label>
+            <label class="input input-bordered flex items-center gap-2">
+              地點
+              <input id="task-location" type="text" class="grow text-center" />
+            </label>
+            <label class="input input-bordered flex items-center gap-2">
+              待辦事項
+              <input id="task-name" type="text" class="grow text-center" />
+            </label>
+            <label class="tracking-widest">標記顏色</label>
+            <div id="mark-color-picker" class="input input-bordered flex items-center justify-center gap-2">
+              <input type="radio" name="radio-3" class="radio checked:bg-red-500" checked="checked" />純紅
+              <input type="radio" name="radio-3" class="radio checked:bg-orange-500" checked="unchecked" />鮮橙
+              <input type="radio" name="radio-3" class="radio checked:bg-green-400" checked="unchecked" />青綠
+              <input type="radio" name="radio-3" class="radio checked:bg-slate-400" checked="unchecked" />水泥灰
+            </div>
+            <button id="task-add-btn" class="btn w-full animate__animated">儲存</button>
+            <div class="divider divider-secondary">已記錄的當天待辦 :</div>
+            <div id="modal-todo-list" class="flex w-full flex-col gap-1"></div>
+            <div
+              id="task-template"
+              class="join mx-auto hidden w-5/7 justify-between gap-2 animate__infinite animate__animated hover:animate-pulse hover:cursor-pointer"
+            >
+              <button class="btn">
+                <svg
+                  class="h-6 w-6 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 11.917 9.724 16.5 19 7.5"
+                  />
+                </svg>
+              </button>
+              <p class="rounded-xl px-2 py-3 text-slate-100">adsfasd</p>
+              <button class="btn">
+                <svg
+                  class="h-6 w-6 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+    </div>
+    <!-- MISC components -->
+    <script src="./main.js"></script>
+  </body>
+</html>

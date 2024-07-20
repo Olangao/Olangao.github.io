@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "OPPOSans-Regular";
+    src: url("../font/OPPOSans-Regular.ttf");
+  }
+}
