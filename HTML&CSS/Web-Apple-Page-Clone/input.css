@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "MiSans-ExtraLight";
+    src: url("./asset/MiSans-ExtraLight.woff");
+    src: url("./asset/MiSans-Regular.woff");
+  }
+}

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Vavin's PinGuo</title>
+  </head>
+  <body>
+    <div id="size-container" class="w-screen">
+      <!--global navbar on the top-->
+      <div class="navbar mx-2 h-11 gap-5 md:mx-auto md:justify-center md:gap-11">
+        <img src="./asset/img/appleLogo.svg" alt="" />
+        <div class="grow md:hidden md:grow-0"></div>
+        <img class="hidden md:inline-block" src="./asset/img/nav-store.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-Mac.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-iPad.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-iPhone.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-Watch.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-AirPods.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-TV&Family.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-Entertainment.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-asset.svg" alt="" />
+        <img class="hidden md:inline-block" src="./asset/img/nav-support.svg" alt="" />
+        <img class="inline-block h-7" src="./asset/img/navbar-search.svg" alt="" />
+        <img class="inline-block" src="./asset/img/navbar-store.svg" alt="" />
+        <img class="inline-block md:hidden" src="./asset/img/mobile-nav-hamburger.svg" alt="" />
+      </div>
+      <!-- Content container -->
+      <div id="content-container" class="mx-auto mt-11 w-6/7 md:mt-14">
+        <!-- Heading 4 current main product by selection-->
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <div>
+            <h1 id="product-h1" class="mb-6 text-4xl font-bold tracking-tighter md:text-5xl">購買 ${product}</h1>
+            <span id="product-h1-price" class="text-sm text-slate-950">NT$ ${XX-XXX}</span>
+          </div>
+          <!-- Discount info  -->
+          <div class="mt-6 text-slate-700 md:mt-0">
+            <div class="flex">
+              <div class="flex items-center justify-center rounded-2xl bg-apple-gray px-5 py-3 text-xs">
+                <span>透過換購，可獲享 NT$1,000–NT$22,900 折抵優惠**</span>
+                <img class="ml-0.5 h-3" src="./asset/img/iconmonstr-plus-circle-thin.svg" alt="" />
+              </div>
+              <div class="grow"></div>
+            </div>
+            <div class="flex">
+              <div class="grow-0 md:grow"></div>
+              <div class="mt-3 flex items-center justify-center rounded-2xl bg-apple-gray px-5 py-3 text-xs">
+                <span>可選用零利率分期付款，最長可達 12 月</span>
+                <img class="ml-0.5 h-3" src="./asset/img/iconmonstr-plus-circle-thin.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product info container -->
+        <div class="flex flex-col md:w-full md:flex-row md:justify-between">
+          <!-- Product slideshow -->
+          <div class="mt-9 flex hidden w-4/5 flex-col rounded-2xl border border-solid border-blue-500 md:block">
+            <div class="flex w-full flex-col items-center justify-center rounded-2xl">
+              <div class="carousel rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./asset/img/iphone-15-finish-select-202309-6-7inch-black.webp" class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product Spec blocks -->
+          <div
+            class="md:w-iphone-spec-blocks mt-4 flex flex-col justify-between border border-solid border-purple-500 md:ml-14"
+          >
+            <!-- Model block  -->
+            <div>
+              <div class="mb-7 flex items-center text-nowrap text-xl font-bold tracking-tighter">
+                <span>機型</span>
+                <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
+                <span class="ml-2 text-gray-400">哪一款最適合你 ？</span>
+              </div>
+              <div
+                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+              >
+                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option1" />
+                <label for="option1" class="px-3 pb-6 hover:cursor-pointer">
+                  <div class="flex">
+                    <div class="flex flex-col justify-center">
+                      <span class="text-sm">Product Model</span>
+                      <span class="text-xs text-gray-600">xx monitor</span>
+                    </div>
+                    <div class="grow"></div>
+                    <span class="my-auto text-xs"> NT$xx,xxx起 </span>
+                  </div>
+                </label>
+              </div>
+              <div
+                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+              >
+                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option2" />
+                <label for="option2" class="px-3 pb-6 hover:cursor-pointer">
+                  <div class="flex">
+                    <div class="flex flex-col justify-center">
+                      <span class="text-sm">Product Model</span>
+                      <span class="text-xs text-gray-600">xx monitor</span>
+                    </div>
+                    <div class="grow"></div>
+                    <span class="my-auto text-xs"> NT$xx,xxx起 </span>
+                  </div>
+                </label>
+              </div>
+              <div class="mt-4 flex w-full flex-col rounded-lg bg-apple-gray">
+                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option2" />
+                <label for="option2" class="px-3 pb-6 hover:cursor-pointer">
+                  <div class="flex">
+                    <div class="flex flex-col justify-center">
+                      <span class="text-sms font-bold tracking-tight">需要選購機型的協助？</span>
+                      <div class="flex items-center gap-1">
+                        <span class="text-sms tracking-tighter text-gray-800">探索螢幕尺寸與電池續航力的差異</span>
+                        <img class="h-1" src="./asset/img/dot-alternative.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <!-- Color block -->
+            <div>
+              <div class="mb-14 flex items-center text-nowrap text-xl font-bold tracking-tighter">
+                <span>外觀</span>
+                <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
+                <span class="ml-2 text-gray-400">挑選你喜愛的外觀</span>
+                <img class="ml-1 h-2" src="./asset/img/dot-alternative-gray.svg" alt="" />
+              </div>
+              <span class="font-bold">顏色 - {顏色}</span>
+              <div class="ml-1 mt-3 flex gap-3">
+                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                  <input type="radio" name="color-option" id="color-blue" class="invisible" />
+                  <img
+                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
+                    src="./asset/img/finish-blue-202309.jpeg"
+                    alt=""
+                  />
+                </label>
+                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                  <input type="radio" name="color-option" id="color-pink" class="invisible" />
+                  <img
+                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
+                    src="./asset/img/finish-pink-202309.jpeg"
+                    alt=""
+                  />
+                </label>
+                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                  <input type="radio" name="color-option" id="color-yellow" class="invisible" />
+                  <img
+                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
+                    src="./asset/img/finish-yellow-202309.jpeg"
+                    alt=""
+                  />
+                </label>
+                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                  <input type="radio" name="color-option" id="color-green" class="invisible" />
+                  <img
+                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
+                    src="./asset/img/finish-green-202309.jpeg"
+                    alt=""
+                  />
+                </label>
+                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                  <input type="radio" name="color-option" id="color-black" class="invisible" />
+                  <img
+                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
+                    src="./asset/img/finish-black-202309.jpeg"
+                    alt=""
+                  />
+                </label>
+              </div>
+            </div>
+            <!-- Storage block -->
+            <div>
+              <div class="mb-14 flex items-center text-nowrap text-xl font-bold tracking-tighter">
+                <span>儲存裝置</span>
+                <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
+                <span class="ml-2 text-gray-400">你需要多少儲存空間 ？</span>
+              </div>
+              <div
+                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+              >
+                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" id="storage-option1" />
+                <label for="storage-option1" class="px-3 pb-6 hover:cursor-pointer">
+                  <div class="flex items-center">
+                    <span class="pb-1 text-xl font-bold">xxx</span>
+                    <span class="text-sm font-bold">GB²</span>
+                    <div class="grow"></div>
+                    <span class="text-sms my-auto"> NT$xx,xxx起 </span>
+                  </div>
+                </label>
+              </div>
+              <div
+                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+              >
+                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" id="storage-option2" />
+                <label for="storage-option2" class="px-3 pb-6 hover:cursor-pointer">
+                  <div class="flex items-center">
+                    <span class="pb-1 text-xl font-bold">xxx</span>
+                    <span class="text-sm font-bold">GB²</span>
+                    <div class="grow"></div>
+                    <span class="text-sms my-auto"> NT$xx,xxx起 </span>
+                  </div>
+                </label>
+              </div>
+              <div
+                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+              >
+                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" id="storage-option3" />
+                <label for="storage-option3" class="px-3 pb-6 hover:cursor-pointer">
+                  <div class="flex items-center">
+                    <span class="pb-1 text-xl font-bold">xxx</span>
+                    <span class="text-sm font-bold">GB²</span>
+                    <div class="grow"></div>
+                    <span class="text-sms my-auto"> NT$xx,xxx起 </span>
+                  </div>
+                </label>
+              </div>
+              <div class="mt-4 flex w-full flex-col rounded-lg bg-apple-gray">
+                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option2" />
+                <label for="option2" class="px-3 pb-6 hover:cursor-pointer">
+                  <div class="flex">
+                    <div class="flex flex-col justify-center">
+                      <span class="text-sms font-bold tracking-tight">不確定需要多少儲存空間？</span>
+                      <div class="flex items-center gap-1">
+                        <span class="text-sms tracking-tighter text-gray-800">讓我們幫你更清楚了解你所需的空間</span>
+                        <img class="h-1" src="./asset/img/dot-alternative.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
