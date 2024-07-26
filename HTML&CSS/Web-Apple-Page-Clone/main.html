@@ -31,7 +31,7 @@
         <!-- Heading 4 current main product by selection-->
         <div class="flex flex-col md:flex-row md:justify-between">
           <div>
-            <h1 id="product-h1" class="mb-6 text-4xl font-semibold tracking-tight md:text-5xl">購買 ${product}</h1>
+            <h1 id="product-h1" class="mb-6 text-4xl font-semibold tracking-wide md:text-5xl">購買 ${product}</h1>
             <span id="product-h1-price" class="text-sm text-slate-950">NT$ ${XX-XXX}</span>
           </div>
           <!-- Discount info  -->
@@ -59,34 +59,47 @@
             <div class="flex h-auto w-full flex-col items-center justify-center rounded-2xl md:sticky md:top-32">
               <div class="carousel rounded-2xl">
                 <div id="slide1" class="carousel-item relative w-full justify-center">
-                  <img src="./asset/img/iphone-15-finish-select-202309-6-7inch-black.webp" class="w-full" />
+                  <img src="./asset/img/i15blue-1.webp" class="w-full" />
                   <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❮</a>
                     <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full justify-center">
+                  <img src="./asset/img/i15blue-2.webp" class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full justify-center">
+                  <img src="./asset/img/i15blue-3.webp" class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Product Spec blocks -->
-          <!-- max(0px, -220px + 50vh) 0px max(60px, -278px + 50vh) -->
           <div class="mt-4 flex flex-col justify-between md:ml-14 md:w-iphone-spec-blocks">
             <!-- Model block  -->
             <div class="md:my-64">
               <div class="flex items-center text-nowrap text-xl font-medium tracking-tighter">
                 <span>機型</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
-                <span class="ml-2 text-gray-400">哪一款最適合你 ？</span>
+                <span class="ml-2 font-medium tracking-wide text-neutral-500">哪一款最適合你 ？</span>
               </div>
               <div
                 class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
               >
-                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option1" />
-                <label for="option1" class="px-3 pb-6 hover:cursor-pointer">
+                <input id="Model-Box1" type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" />
+                <label id="Model-Box1-Content" for="Model-Box1" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex">
-                    <div id="Model-Box1" class="flex flex-col justify-center">
-                      <span class="text-sm">Product Model</span>
-                      <span class="text-xs text-gray-600">xx monitor</span>
+                    <div class="flex flex-col justify-center">
+                      <span class="text-base">Product Model</span>
+                      <span class="text-sms text-gray-600">xx monitor</span>
                     </div>
                     <div class="grow"></div>
                     <span class="my-auto text-xs"> NT$xx,xxx起 </span>
@@ -96,12 +109,12 @@
               <div
                 class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
               >
-                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option2" />
-                <label for="option2" class="px-3 pb-6 hover:cursor-pointer">
+                <input id="Model-Box2" type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" />
+                <label id="Model-Box2-Content" for="Model-Box2" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex">
-                    <div id="Model-Box2" class="flex flex-col justify-center">
-                      <span class="text-sm">Product Model</span>
-                      <span class="text-xs text-gray-600">xx monitor</span>
+                    <div class="flex flex-col justify-center">
+                      <span class="text-base">Product Model</span>
+                      <span class="text-sms text-gray-600">xx monitor</span>
                     </div>
                     <div class="grow"></div>
                     <span class="my-auto text-xs"> NT$xx,xxx起 </span>
@@ -114,10 +127,10 @@
               <div class="mb-14 flex items-center text-nowrap text-xl font-medium tracking-tighter">
                 <span>外觀</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
-                <span class="ml-2 text-gray-400">挑選你喜愛的外觀</span>
+                <span class="ml-2 font-medium tracking-wide text-neutral-500">挑選你喜愛的外觀</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative-gray.svg" alt="" />
               </div>
-              <span id="Model-Color" class="font-medium">顏色 - {顏色}</span>
+              <span id="Model-Color" class="font-medium">顏色 - 藍色</span>
               <div id="Color-Picklist" class="ml-1 mt-3 flex gap-3">
                 <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
                   <input type="radio" name="color-option" id="color-blue" class="invisible" />
@@ -127,101 +140,67 @@
                     alt=""
                   />
                 </label>
-                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                <label for="color-pink" class="flex flex-col hover:cursor-pointer" for="">
                   <input type="radio" name="color-option" id="color-pink" class="invisible" />
-                  <img
-                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
-                    src="./asset/img/finish-pink-202309.jpeg"
-                    alt=""
-                  />
+                  <img class="h-7 w-7 rounded-full" src="./asset/img/finish-pink-202309.jpeg" alt="" />
                 </label>
-                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                <label for="color-yellow" class="flex flex-col hover:cursor-pointer" for="">
                   <input type="radio" name="color-option" id="color-yellow" class="invisible" />
-                  <img
-                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
-                    src="./asset/img/finish-yellow-202309.jpeg"
-                    alt=""
-                  />
+                  <img class="h-7 w-7 rounded-full" src="./asset/img/finish-yellow-202309.jpeg" alt="" />
                 </label>
-                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                <label for="color-green" class="flex flex-col hover:cursor-pointer" for="">
                   <input type="radio" name="color-option" id="color-green" class="invisible" />
-                  <img
-                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
-                    src="./asset/img/finish-green-202309.jpeg"
-                    alt=""
-                  />
+                  <img class="h-7 w-7 rounded-full" src="./asset/img/finish-green-202309.jpeg" alt="" />
                 </label>
-                <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
+                <label for="color-black" class="flex flex-col hover:cursor-pointer" for="">
                   <input type="radio" name="color-option" id="color-black" class="invisible" />
-                  <img
-                    class="h-7 w-7 rounded-full outline outline-2 outline-offset-2 outline-blue-500"
-                    src="./asset/img/finish-black-202309.jpeg"
-                    alt=""
-                  />
+                  <img class="h-7 w-7 rounded-full" src="./asset/img/finish-black-202309.jpeg" alt="" />
                 </label>
               </div>
             </div>
             <!-- Storage block -->
             <div class="mb-80">
-              <div class="flex items-center text-nowrap text-xl font-normal tracking-tighter md:mb-14">
+              <div class="flex items-center text-nowrap text-xl font-normal md:mb-14">
                 <span>儲存裝置</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
-                <span class="ml-2 text-gray-400">你需要多少儲存空間 ？</span>
+                <span class="ml-2 font-medium text-neutral-500">你需要多少儲存空間 ？</span>
               </div>
               <div
-                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white tracking-wider has-[:checked]:border-2 has-[:checked]:border-blue-500"
               >
-                <input
-                  id="Storage-Box1"
-                  type="radio"
-                  class="invisible mb-1 w-4 checked:h-4"
-                  name="storage-option"
-                  id="storage-option1"
-                />
-                <label for="storage-option1" class="px-3 pb-6 hover:cursor-pointer">
+                <input id="Storage-Box1" type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" />
+                <label id="Storage-Box1-Content" for="Storage-Box1" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex items-center">
-                    <span class="pb-1 text-xl font-bold">xxx</span>
+                    <span class="pb-1 text-lg font-normal">xxx</span>
                     <span class="text-sm font-bold">GB²</span>
                     <div class="grow"></div>
-                    <span class="my-auto text-sms"> NT$xx,xxx起 </span>
+                    <span class="my-auto text-sms font-light"> NT$xx,xxx起 </span>
                   </div>
                 </label>
               </div>
               <div
-                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white tracking-wider has-[:checked]:border-2 has-[:checked]:border-blue-500"
               >
-                <input
-                  id="Storage-Box2"
-                  type="radio"
-                  class="invisible mb-1 w-4 checked:h-4"
-                  name="storage-option"
-                  id="storage-option2"
-                />
-                <label for="storage-option2" class="px-3 pb-6 hover:cursor-pointer">
+                <input id="Storage-Box2" type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" />
+                <label id="Storage-Box2-Content" for="Storage-Box2" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex items-center">
-                    <span class="pb-1 text-xl font-bold">xxx</span>
+                    <span class="pb-1 text-xl font-normal">xxx</span>
                     <span class="text-sm font-bold">GB²</span>
                     <div class="grow"></div>
-                    <span class="my-auto text-sms"> NT$xx,xxx起 </span>
+                    <span class="my-auto text-sms font-light"> NT$xx,xxx起 </span>
                   </div>
                 </label>
               </div>
               <div
-                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+                class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white tracking-wider has-[:checked]:border-2 has-[:checked]:border-blue-500"
               >
-                <input
-                  id="Storage-Box3"
-                  type="radio"
-                  class="invisible mb-1 w-4 checked:h-4"
-                  name="storage-option"
-                  id="storage-option3"
-                />
-                <label for="storage-option3" class="px-3 pb-6 hover:cursor-pointer">
+                <input id="Storage-Box3" type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" />
+                <label id="Storage-Box3-Content" for="Storage-Box3" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex items-center">
-                    <span class="pb-1 text-xl font-bold">xxx</span>
+                    <span class="pb-1 text-xl font-normal">xxx</span>
                     <span class="text-sm font-bold">GB²</span>
                     <div class="grow"></div>
-                    <span class="my-auto text-sms"> NT$xx,xxx起 </span>
+                    <span class="my-auto text-sms font-light"> NT$xx,xxx起 </span>
                   </div>
                 </label>
               </div>
@@ -244,7 +223,7 @@
         <!-- Apple Trade In block  -->
         <div class="my-18 flex w-full">
           <div class="flex w-full flex-col">
-            <div class="flex items-center text-nowrap text-xl">
+            <div class="flex items-center text-xl md:text-nowrap">
               <span class="font-medium">Apple Trade In 換購方案</span>
               <img class="h-2 pl-2 pr-2" src="./asset/img/dot-alternative.svg" alt="" />
               <span class="font-semibold text-slate-500">換購新 iPhone</span>
@@ -252,8 +231,8 @@
               <span class="font-semibold text-slate-500">可獲享 NT$1,000–NT$22,900 折抵優惠**</span>
               <img class="h-2 pl-1" src="./asset/img/dot-alternative-gray.svg" alt="" />
             </div>
-            <div class="mx-auto flex w-full">
-              <div class="flex w-5/7 justify-between gap-2">
+            <div class="mx-auto flex w-full flex-col md:flex-row">
+              <div class="flex w-5/7 flex-col justify-between gap-2 md:flex-row">
                 <div
                   class="mt-4 flex h-20 w-1/2 flex-col items-center justify-center rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
                 >

@@ -1,21 +1,35 @@
 {
   "iPhone15Models": [
     {
-      "Model": "iPhone15",
+      "Model": "iPhone 15",
       "PriceRange": [29900, 33400, 40400],
       "Colors": ["藍色", "粉紅色", "黃色", "綠色", "黑色"],
+      "Images": {
+        "藍色": ["./asset/img/i15blue-1.webp", "./asset/img/i15blue-2.webp", "./asset/img/i15blue-3.webp"],
+        "粉紅色": ["./asset/img/i15pink-1.webp", "./asset/img/i15pink-2.webp", "./asset/img/i15pink-3.webp"],
+        "黃色": ["./asset/img/i15yellow-1.webp", "./asset/img/i15yellow-2.webp", "./asset/img/i15yellow-3.webp"],
+        "綠色": ["./asset/img/i15green-1.webp", "./asset/img/i15green-2.webp", "./asset/img/i15green-3.webp"],
+        "黑色": ["./asset/img/i15black-1.webp", "./asset/img/i15black-2.webp", "./asset/img/i15black-3.webp"]
+      },
       "ScreenSize": 6.1,
       "Storage": [128, 256, 512]
     },
     {
-      "Model": "iPhone15 Plus",
-      "PriceRange": [29900, 33400, 40400],
+      "Model": "iPhone 15 Plus",
+      "PriceRange": [32900, 36400, 43400],
       "Colors": ["藍色", "粉紅色", "黃色", "綠色", "黑色"],
+      "Images": {
+        "藍色": ["./asset/img/i15blue-1.webp", "./asset/img/i15blue-2.webp", "./asset/img/i15blue-3.webp"],
+        "粉紅色": ["./asset/img/i15pink-1.webp", "./asset/img/i15pink-2.webp", "./asset/img/i15pink-3.webp"],
+        "黃色": ["./asset/img/i15yellow-1.webp", "./asset/img/i15yellow-2.webp", "./asset/img/i15yellow-3.webp"],
+        "綠色": ["./asset/img/i15green-1.webp", "./asset/img/i15green-2.webp", "./asset/img/i15green-3.webp"],
+        "黑色": ["./asset/img/i15black-1.webp", "./asset/img/i15black-2.webp", "./asset/img/i15black-3.webp"]
+      },
       "ScreenSize": 6.7,
       "Storage": [128, 256, 512]
     },
     {
-      "Model": "iPhone15 Pro",
+      "Model": "iPhone 15 Pro",
       "PriceRange": [36900, 40400, 47400, 54400],
       "Colors": ["原色鈦金屬", "藍色鈦金屬", "白色鈦金屬", "黑色鈦金屬"],
       "ScreenSize": 6.1,
