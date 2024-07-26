@@ -53,11 +53,9 @@
           </div>
         </div>
         <!-- Product info container -->
-        <div class="flex h-full w-full flex-col border border-solid border-green-600 md:h-full md:flex-row">
+        <div class="flex h-full w-full flex-col md:h-full md:flex-row">
           <!-- Product slideshow -->
-          <div
-            class="mt-9 h-auto w-4/5 flex-col overflow-visible rounded-2xl border border-solid border-blue-500 md:block"
-          >
+          <div class="mx-auto mt-9 h-auto w-4/5 flex-col overflow-visible md:block">
             <div class="flex h-auto w-full flex-col items-center justify-center rounded-2xl md:sticky md:top-32">
               <div class="carousel rounded-2xl">
                 <div id="slide1" class="carousel-item relative w-full justify-center">
@@ -72,9 +70,7 @@
           </div>
           <!-- Product Spec blocks -->
           <!-- max(0px, -220px + 50vh) 0px max(60px, -278px + 50vh) -->
-          <div
-            class="mt-4 flex flex-col justify-between border border-solid border-purple-500 md:ml-14 md:w-iphone-spec-blocks"
-          >
+          <div class="mt-4 flex flex-col justify-between md:ml-14 md:w-iphone-spec-blocks">
             <!-- Model block  -->
             <div class="md:my-64">
               <div class="flex items-center text-nowrap text-xl font-medium tracking-tighter">
@@ -88,7 +84,7 @@
                 <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option1" />
                 <label for="option1" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex">
-                    <div class="flex flex-col justify-center">
+                    <div id="Model-Box1" class="flex flex-col justify-center">
                       <span class="text-sm">Product Model</span>
                       <span class="text-xs text-gray-600">xx monitor</span>
                     </div>
@@ -103,7 +99,7 @@
                 <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option2" />
                 <label for="option2" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex">
-                    <div class="flex flex-col justify-center">
+                    <div id="Model-Box2" class="flex flex-col justify-center">
                       <span class="text-sm">Product Model</span>
                       <span class="text-xs text-gray-600">xx monitor</span>
                     </div>
@@ -121,8 +117,8 @@
                 <span class="ml-2 text-gray-400">挑選你喜愛的外觀</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative-gray.svg" alt="" />
               </div>
-              <span class="font-medium">顏色 - {顏色}</span>
-              <div class="ml-1 mt-3 flex gap-3">
+              <span id="Model-Color" class="font-medium">顏色 - {顏色}</span>
+              <div id="Color-Picklist" class="ml-1 mt-3 flex gap-3">
                 <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
                   <input type="radio" name="color-option" id="color-blue" class="invisible" />
                   <img
@@ -175,7 +171,13 @@
               <div
                 class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
               >
-                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" id="storage-option1" />
+                <input
+                  id="Storage-Box1"
+                  type="radio"
+                  class="invisible mb-1 w-4 checked:h-4"
+                  name="storage-option"
+                  id="storage-option1"
+                />
                 <label for="storage-option1" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex items-center">
                     <span class="pb-1 text-xl font-bold">xxx</span>
@@ -188,7 +190,13 @@
               <div
                 class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
               >
-                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" id="storage-option2" />
+                <input
+                  id="Storage-Box2"
+                  type="radio"
+                  class="invisible mb-1 w-4 checked:h-4"
+                  name="storage-option"
+                  id="storage-option2"
+                />
                 <label for="storage-option2" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex items-center">
                     <span class="pb-1 text-xl font-bold">xxx</span>
@@ -201,7 +209,13 @@
               <div
                 class="mt-4 flex w-full flex-col rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
               >
-                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="storage-option" id="storage-option3" />
+                <input
+                  id="Storage-Box3"
+                  type="radio"
+                  class="invisible mb-1 w-4 checked:h-4"
+                  name="storage-option"
+                  id="storage-option3"
+                />
                 <label for="storage-option3" class="px-3 pb-6 hover:cursor-pointer">
                   <div class="flex items-center">
                     <span class="pb-1 text-xl font-bold">xxx</span>

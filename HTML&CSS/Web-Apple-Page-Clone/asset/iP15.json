@@ -1,0 +1,32 @@
+{
+  "iPhone15Models": [
+    {
+      "Model": "iPhone15",
+      "PriceRange": [29900, 33400, 40400],
+      "Colors": ["藍色", "粉紅色", "黃色", "綠色", "黑色"],
+      "ScreenSize": 6.1,
+      "Storage": [128, 256, 512]
+    },
+    {
+      "Model": "iPhone15 Plus",
+      "PriceRange": [29900, 33400, 40400],
+      "Colors": ["藍色", "粉紅色", "黃色", "綠色", "黑色"],
+      "ScreenSize": 6.7,
+      "Storage": [128, 256, 512]
+    },
+    {
+      "Model": "iPhone15 Pro",
+      "PriceRange": [36900, 40400, 47400, 54400],
+      "Colors": ["原色鈦金屬", "藍色鈦金屬", "白色鈦金屬", "黑色鈦金屬"],
+      "ScreenSize": 6.1,
+      "Storage": [128, 256, 512, 1024]
+    },
+    {
+      "Model": "iPhone15 Pro Max",
+      "PriceRange": [29900, 33400, 40400],
+      "Colors": ["原色鈦金屬", "藍色鈦金屬", "白色鈦金屬", "黑色鈦金屬"],
+      "ScreenSize": 6.7,
+      "Storage": [256, 512, 1024]
+    }
+  ]
+}
