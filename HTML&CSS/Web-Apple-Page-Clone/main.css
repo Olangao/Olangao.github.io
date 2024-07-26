@@ -1379,10 +1379,6 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.mb-80 {
-  margin-bottom: 20rem;
-}
-
 .ml-0\.5 {
   margin-left: 0.125rem;
 }
@@ -1491,10 +1487,6 @@ html {
   min-height: 540px;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-3 {
   width: 0.75rem;
 }
@@ -1521,10 +1513,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-iphone-spec-blocks {
-  width: 300px;
 }
 
 .w-screen {
@@ -1720,9 +1708,24 @@ html {
   padding-right: 0.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -1748,18 +1751,12 @@ html {
   line-height: 1rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -1774,10 +1771,6 @@ html {
   font-weight: 600;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -1786,21 +1779,12 @@ html {
   letter-spacing: -0.05em;
 }
 
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
 .tracking-wide {
   letter-spacing: 0.025em;
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-gray-600 {
@@ -1811,6 +1795,11 @@ html {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
 .text-slate-500 {
@@ -1826,21 +1815,6 @@ html {
 .text-slate-950 {
   --tw-text-opacity: 1;
   color: rgb(2 6 23 / var(--tw-text-opacity));
-}
-
-.text-neutral-400 {
-  --tw-text-opacity: 1;
-  color: rgb(163 163 163 / var(--tw-text-opacity));
-}
-
-.text-neutral-500 {
-  --tw-text-opacity: 1;
-  color: rgb(115 115 115 / var(--tw-text-opacity));
-}
-
-.text-neutral-600 {
-  --tw-text-opacity: 1;
-  color: rgb(82 82 82 / var(--tw-text-opacity));
 }
 
 .outline {
@@ -1899,6 +1873,10 @@ html {
     margin-bottom: 3.5rem;
   }
 
+  .md\:mb-80 {
+    margin-bottom: 20rem;
+  }
+
   .md\:ml-14 {
     margin-left: 3.5rem;
   }
@@ -1919,12 +1897,24 @@ html {
     display: inline-block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-5\/7 {
+    width: 71.4285714%;
   }
 
   .md\:w-iphone-spec-blocks {
@@ -1953,10 +1943,6 @@ html {
 
   .md\:gap-11 {
     gap: 2.75rem;
-  }
-
-  .md\:text-nowrap {
-    text-wrap: nowrap;
   }
 
   .md\:text-5xl {

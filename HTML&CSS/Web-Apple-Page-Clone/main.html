@@ -159,7 +159,7 @@
               </div>
             </div>
             <!-- Storage block -->
-            <div class="mb-80">
+            <div class="md:mb-80">
               <div class="flex items-center text-nowrap text-xl font-normal md:mb-14">
                 <span>儲存裝置</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
@@ -223,18 +223,30 @@
         <!-- Apple Trade In block  -->
         <div class="my-18 flex w-full">
           <div class="flex w-full flex-col">
-            <div class="flex items-center text-xl md:text-nowrap">
-              <span class="font-medium">Apple Trade In 換購方案</span>
-              <img class="h-2 pl-2 pr-2" src="./asset/img/dot-alternative.svg" alt="" />
-              <span class="font-semibold text-slate-500">換購新 iPhone</span>
-              <span class="pb-4 pl-2 font-semibold text-slate-500">，</span>
-              <span class="font-semibold text-slate-500">可獲享 NT$1,000–NT$22,900 折抵優惠**</span>
-              <img class="h-2 pl-1" src="./asset/img/dot-alternative-gray.svg" alt="" />
+            <div class="flex flex-col text-nowrap text-3xl md:flex-row">
+              <span class="font-medium"
+                >Apple Trade In 換購方案<img
+                  class="inline-block h-2 pl-2 pr-2"
+                  src="./asset/img/dot-alternative.svg"
+                  alt=""
+              /></span>
+
+              <span class="font-semibold text-slate-500"
+                >換購新 iPhone<span class="pb-4 pl-2 font-semibold text-slate-500">，</span></span
+              >
+
+              <span class="font-semibold text-slate-500"
+                >可獲享 NT$1,000–NT$22,900 折抵優惠**<img
+                  class="inline-block h-2 pl-1"
+                  src="./asset/img/dot-alternative-gray.svg"
+                  alt=""
+              /></span>
             </div>
+            <!-- Trade in boxes -->
             <div class="mx-auto flex w-full flex-col md:flex-row">
-              <div class="flex w-5/7 flex-col justify-between gap-2 md:flex-row">
+              <div class="flex w-full flex-col gap-2 md:w-5/7 md:flex-row md:justify-between">
                 <div
-                  class="mt-4 flex h-20 w-1/2 flex-col items-center justify-center rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+                  class="mt-4 flex h-20 w-full flex-col items-center justify-center rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500 md:w-1/2"
                 >
                   <div class="flex flex-col items-center">
                     <span class="text-sm font-semibold">選取一款智慧型手機</span>
@@ -245,17 +257,19 @@
                   </div>
                 </div>
                 <div
-                  class="mt-4 flex h-20 w-1/2 flex-col items-center justify-center rounded-lg border border-solid border-gray-500 bg-white"
+                  class="mt-4 flex h-20 w-full flex-col items-center justify-center rounded-lg border border-solid border-gray-500 bg-white md:w-1/2"
                 >
                   <div class="flex flex-col items-center">
                     <span class="text-sm font-semibold">無換購</span>
                   </div>
                 </div>
               </div>
-              <div class="grow"></div>
-              <div class="mt-4 box-border flex h-20 w-iphone-spec-blocks flex-col rounded-lg bg-apple-gray px-3 py-6">
+              <div class="hidden md:flex md:grow"></div>
+              <div
+                class="mt-4 box-border flex h-20 w-full flex-row items-center justify-center rounded-lg bg-apple-gray px-3 py-6 md:w-iphone-spec-blocks"
+              >
                 <div class="flex">
-                  <div class="flex flex-col justify-center">
+                  <div class="flex flex-col">
                     <span class="text-sms font-semibold tracking-tight">Trade In 換購方案如何運作？</span>
                     <div class="flex items-center gap-1">
                       <span class="text-sms tracking-tighter text-gray-800">我們將逐步引導你完成整個流程</span>
