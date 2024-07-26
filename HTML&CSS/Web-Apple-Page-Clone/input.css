@@ -3,8 +3,48 @@
 @tailwind utilities;
 @layer base {
   @font-face {
-    font-family: "MiSans-ExtraLight";
-    src: url("./asset/MiSans-ExtraLight.woff");
-    src: url("./asset/MiSans-Regular.woff");
+    font-family: "MiSans";
+    font-weight: 700; /* Bold */
+    src: url("./asset/MiSans-Bold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "MiSans";
+    font-weight: 600; /* Demi-bold */
+    src: url("./asset/MiSans-Demibold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "MiSans";
+    font-weight: 200; /* Extra Light */
+    src: url("./asset/MiSans-ExtraLight.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "MiSans";
+    font-weight: 800; /* Heavy */
+    src: url("./asset/MiSans-Heavy.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "MiSans";
+    font-weight: 300; /* Light */
+    src: url("./asset/MiSans-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "MiSans";
+    font-weight: 500; /* Medium */
+    src: url("./asset/MiSans-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "MiSans";
+    font-weight: 400; /* Normal */
+    src: url("./asset/MiSans-Normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "MiSans";
+    font-weight: 600; /* Semi-bold */
+    src: url("./asset/MiSans-Semibold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "MiSans";
+    font-weight: 100; /* Thin */
+    src: url("./asset/MiSans-Thin.woff2") format("woff2");
   }
 }

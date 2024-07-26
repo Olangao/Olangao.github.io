@@ -31,7 +31,7 @@
         <!-- Heading 4 current main product by selection-->
         <div class="flex flex-col md:flex-row md:justify-between">
           <div>
-            <h1 id="product-h1" class="mb-6 text-4xl font-bold tracking-tighter md:text-5xl">購買 ${product}</h1>
+            <h1 id="product-h1" class="mb-6 text-4xl font-semibold tracking-tight md:text-5xl">購買 ${product}</h1>
             <span id="product-h1-price" class="text-sm text-slate-950">NT$ ${XX-XXX}</span>
           </div>
           <!-- Discount info  -->
@@ -53,12 +53,14 @@
           </div>
         </div>
         <!-- Product info container -->
-        <div class="flex flex-col md:w-full md:flex-row md:justify-between">
+        <div class="flex h-full w-full flex-col border border-solid border-green-600 md:h-full md:flex-row">
           <!-- Product slideshow -->
-          <div class="mt-9 flex hidden w-4/5 flex-col rounded-2xl border border-solid border-blue-500 md:block">
-            <div class="flex w-full flex-col items-center justify-center rounded-2xl">
+          <div
+            class="mt-9 h-auto w-4/5 flex-col overflow-visible rounded-2xl border border-solid border-blue-500 md:block"
+          >
+            <div class="flex h-auto w-full flex-col items-center justify-center rounded-2xl md:sticky md:top-32">
               <div class="carousel rounded-2xl">
-                <div id="slide1" class="carousel-item relative w-full">
+                <div id="slide1" class="carousel-item relative w-full justify-center">
                   <img src="./asset/img/iphone-15-finish-select-202309-6-7inch-black.webp" class="w-full" />
                   <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                     <a href="#slide4" class="btn btn-circle">❮</a>
@@ -69,12 +71,13 @@
             </div>
           </div>
           <!-- Product Spec blocks -->
+          <!-- max(0px, -220px + 50vh) 0px max(60px, -278px + 50vh) -->
           <div
-            class="md:w-iphone-spec-blocks mt-4 flex flex-col justify-between border border-solid border-purple-500 md:ml-14"
+            class="mt-4 flex flex-col justify-between border border-solid border-purple-500 md:ml-14 md:w-iphone-spec-blocks"
           >
             <!-- Model block  -->
-            <div>
-              <div class="mb-7 flex items-center text-nowrap text-xl font-bold tracking-tighter">
+            <div class="md:my-64">
+              <div class="flex items-center text-nowrap text-xl font-medium tracking-tighter">
                 <span>機型</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
                 <span class="ml-2 text-gray-400">哪一款最適合你 ？</span>
@@ -109,30 +112,16 @@
                   </div>
                 </label>
               </div>
-              <div class="mt-4 flex w-full flex-col rounded-lg bg-apple-gray">
-                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option2" />
-                <label for="option2" class="px-3 pb-6 hover:cursor-pointer">
-                  <div class="flex">
-                    <div class="flex flex-col justify-center">
-                      <span class="text-sms font-bold tracking-tight">需要選購機型的協助？</span>
-                      <div class="flex items-center gap-1">
-                        <span class="text-sms tracking-tighter text-gray-800">探索螢幕尺寸與電池續航力的差異</span>
-                        <img class="h-1" src="./asset/img/dot-alternative.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </label>
-              </div>
             </div>
             <!-- Color block -->
-            <div>
-              <div class="mb-14 flex items-center text-nowrap text-xl font-bold tracking-tighter">
+            <div class="md:my-64">
+              <div class="mb-14 flex items-center text-nowrap text-xl font-medium tracking-tighter">
                 <span>外觀</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
                 <span class="ml-2 text-gray-400">挑選你喜愛的外觀</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative-gray.svg" alt="" />
               </div>
-              <span class="font-bold">顏色 - {顏色}</span>
+              <span class="font-medium">顏色 - {顏色}</span>
               <div class="ml-1 mt-3 flex gap-3">
                 <label for="color-blue" class="flex flex-col hover:cursor-pointer" for="">
                   <input type="radio" name="color-option" id="color-blue" class="invisible" />
@@ -177,8 +166,8 @@
               </div>
             </div>
             <!-- Storage block -->
-            <div>
-              <div class="mb-14 flex items-center text-nowrap text-xl font-bold tracking-tighter">
+            <div class="mb-80">
+              <div class="flex items-center text-nowrap text-xl font-normal tracking-tighter md:mb-14">
                 <span>儲存裝置</span>
                 <img class="ml-1 h-2" src="./asset/img/dot-alternative.svg" alt="" />
                 <span class="ml-2 text-gray-400">你需要多少儲存空間 ？</span>
@@ -192,7 +181,7 @@
                     <span class="pb-1 text-xl font-bold">xxx</span>
                     <span class="text-sm font-bold">GB²</span>
                     <div class="grow"></div>
-                    <span class="text-sms my-auto"> NT$xx,xxx起 </span>
+                    <span class="my-auto text-sms"> NT$xx,xxx起 </span>
                   </div>
                 </label>
               </div>
@@ -205,7 +194,7 @@
                     <span class="pb-1 text-xl font-bold">xxx</span>
                     <span class="text-sm font-bold">GB²</span>
                     <div class="grow"></div>
-                    <span class="text-sms my-auto"> NT$xx,xxx起 </span>
+                    <span class="my-auto text-sms"> NT$xx,xxx起 </span>
                   </div>
                 </label>
               </div>
@@ -218,27 +207,79 @@
                     <span class="pb-1 text-xl font-bold">xxx</span>
                     <span class="text-sm font-bold">GB²</span>
                     <div class="grow"></div>
-                    <span class="text-sms my-auto"> NT$xx,xxx起 </span>
+                    <span class="my-auto text-sms"> NT$xx,xxx起 </span>
                   </div>
                 </label>
               </div>
-              <div class="mt-4 flex w-full flex-col rounded-lg bg-apple-gray">
-                <input type="radio" class="invisible mb-1 w-4 checked:h-4" name="option" id="option2" />
-                <label for="option2" class="px-3 pb-6 hover:cursor-pointer">
-                  <div class="flex">
-                    <div class="flex flex-col justify-center">
-                      <span class="text-sms font-bold tracking-tight">不確定需要多少儲存空間？</span>
-                      <div class="flex items-center gap-1">
-                        <span class="text-sms tracking-tighter text-gray-800">讓我們幫你更清楚了解你所需的空間</span>
-                        <img class="h-1" src="./asset/img/dot-alternative.svg" alt="" />
-                      </div>
+              <div class="mt-4 flex w-full flex-col rounded-lg bg-apple-gray px-3 py-6">
+                <div class="flex">
+                  <div class="flex flex-col justify-center">
+                    <span class="text-sms font-semibold">不確定需要多少儲存空間？</span>
+                    <div class="flex items-center gap-1">
+                      <span class="text-sms text-gray-800">讓我們幫你更清楚了解你所需的空間</span>
+                      <img class="h-1" src="./asset/img/dot-alternative.svg" alt="" />
                     </div>
                   </div>
-                </label>
+                  <div class="grow"></div>
+                  <img class="h-3 w-3" src="./asset/img/iconmonstr-plus-circle-thin.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Apple Trade In block  -->
+        <div class="my-18 flex w-full">
+          <div class="flex w-full flex-col">
+            <div class="flex items-center text-nowrap text-xl">
+              <span class="font-medium">Apple Trade In 換購方案</span>
+              <img class="h-2 pl-2 pr-2" src="./asset/img/dot-alternative.svg" alt="" />
+              <span class="font-semibold text-slate-500">換購新 iPhone</span>
+              <span class="pb-4 pl-2 font-semibold text-slate-500">，</span>
+              <span class="font-semibold text-slate-500">可獲享 NT$1,000–NT$22,900 折抵優惠**</span>
+              <img class="h-2 pl-1" src="./asset/img/dot-alternative-gray.svg" alt="" />
+            </div>
+            <div class="mx-auto flex w-full">
+              <div class="flex w-5/7 justify-between gap-2">
+                <div
+                  class="mt-4 flex h-20 w-1/2 flex-col items-center justify-center rounded-lg border border-solid border-gray-500 bg-white has-[:checked]:border-2 has-[:checked]:border-blue-500"
+                >
+                  <div class="flex flex-col items-center">
+                    <span class="text-sm font-semibold">選取一款智慧型手機</span>
+                    <div class="flex items-center text-nowrap">
+                      <span class="my-auto text-ss font-normal">只須回答幾個問題，即可取得估價</span>
+                      <img class="ml-1 h-1" src="./asset/img/dot-alternative.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mt-4 flex h-20 w-1/2 flex-col items-center justify-center rounded-lg border border-solid border-gray-500 bg-white"
+                >
+                  <div class="flex flex-col items-center">
+                    <span class="text-sm font-semibold">無換購</span>
+                  </div>
+                </div>
+              </div>
+              <div class="grow"></div>
+              <div class="mt-4 box-border flex h-20 w-iphone-spec-blocks flex-col rounded-lg bg-apple-gray px-3 py-6">
+                <div class="flex">
+                  <div class="flex flex-col justify-center">
+                    <span class="text-sms font-semibold tracking-tight">Trade In 換購方案如何運作？</span>
+                    <div class="flex items-center gap-1">
+                      <span class="text-sms tracking-tighter text-gray-800">我們將逐步引導你完成整個流程</span>
+                      <img class="h-1" src="./asset/img/dot-alternative.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="grow"></div>
+                  <img class="h-3 w-3" src="./asset/img/iconmonstr-plus-circle-thin.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add to Cart block -->
+      <div class="h-iphone-add2Cart-block-h w-full bg-apple-gray">
+        <!-- 3 blocks in w-5/7 container then space between -->
       </div>
     </div>
     <script src="main.js"></script>

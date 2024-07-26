@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./main.html'],
+    content: ['./main.html', './Gallery-try.html'],
     theme: {
         extend: {
+            flex: {
+                test: '1 0 100%',
+            },
+            margin: {
+                18: '74px',
+            },
+            flexBasis: {
+                'iphone-gallery': 'calc(100%-22.82353rem)',
+            },
             fontSize: {
                 ss: '9px',
                 sms: '12px',
@@ -14,18 +23,35 @@ module.exports = {
                 '4/7': '57.1428571%',
                 '5/7': '71.4285714%',
                 '6/7': '85.7142857%',
+                '109-PX': '109px',
             },
             colors: {
                 'apple-gray': '#f5f5f7',
             },
+            height: {
+                'iphone-add2Cart-block-h': '474px',
+            },
             width: {
                 'iphone-gallery': '1045px',
-                'iphone-spec-blocks': '330px',
+                'iphone-spec-blocks': '300px',
+            },
+            minHeight: {
+                'iphone-gallery-min-height': '540px',
             },
         },
         fontFamily: {
-            MiSans: ['MiSans-ExtraLight', 'sans-serif'],
-            sans: ['MiSans-ExtraLight', 'Helvetica', 'Arial', 'sans-serif'],
+            MiSans: ['MiSans', 'sans-serif'],
+            sans: ['MiSans', 'Helvetica', 'Arial', 'sans-serif'],
+        },
+        fontWeight: {
+            thin: 100,
+            extralight: 200,
+            light: 300,
+            normal: 400,
+            medium: 500,
+            semibold: 600,
+            bold: 700,
+            heavy: 800,
         },
     },
     plugins: [require('daisyui')],
